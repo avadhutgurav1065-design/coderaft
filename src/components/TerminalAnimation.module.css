@@ -1,0 +1,72 @@
+.terminal {
+  border: 1px solid rgba(246, 245, 241, 0.15);
+  background-color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.7;
+  overflow: hidden;
+}
+
+.terminalBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(246, 245, 241, 0.08);
+}
+
+.terminalDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(246, 245, 241, 0.15);
+}
+
+.terminalTitle {
+  margin-left: 8px;
+  font-size: 11px;
+  color: rgba(246, 245, 241, 0.35);
+}
+
+.terminalBody {
+  padding: 20px 16px;
+  color: rgba(246, 245, 241, 0.7);
+  min-height: 260px;
+}
+
+.line {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.prompt {
+  color: var(--success);
+}
+
+.comment {
+  color: rgba(246, 245, 241, 0.3);
+}
+
+.highlight {
+  color: var(--signal);
+}
+
+.success {
+  color: var(--success);
+}
+
+.cursor {
+  display: inline-block;
+  width: 7px;
+  height: 14px;
+  background-color: var(--success);
+  vertical-align: middle;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

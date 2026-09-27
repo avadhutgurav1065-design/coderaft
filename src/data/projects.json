@@ -1,0 +1,165 @@
+[
+  {
+    "slug": "imed-ai-placement-pipeline",
+    "title": "IMED Placement OS",
+    "category": "AI Systems & ERP",
+    "featured": true,
+    "featuredOrder": 1,
+    "tagline": "A unified platform connecting administration, students, and alumni through an intelligent AI-driven layer.",
+    "problem": "IMED's placement operations were fragmented across manual spreadsheets, making it impossible to proactively track student preparation, manage corporate drives efficiently, or generate compliance-ready accreditation reports (NAAC/NBA). At-risk students were slipping through the cracks until it was too late.",
+    "approach": "We engineered a 'Three-Panel Architecture' (Admin, Student, Alumni) consolidated onto a single shared data core. We integrated an 'Intelligent Automation Layer' powering 5 core AI features: Smart Match Router (semantic resume matching), Predictive Analytics, Risk Telemetry, Resume Analyzer, and AI Mock Interviews.",
+    "result": "Delivered a massive 22-feature platform that shifts the Placement Cell from a reactive posture to proactive intervention. Placement processing dropped to hours, at-risk students are automatically flagged for early counseling, and accreditation data is structured and export-ready from day one.",
+    "timeline": "6 weeks",
+    "role": "Full-stack development + AI pipeline architecture",
+    "stack": {
+      "frontend": ["React", "Tailwind CSS", "Framer Motion"],
+      "backend": ["Flask", "Python", "Node.js"],
+      "data": ["ChromaDB", "Local LLMs", "PostgreSQL"],
+      "infra": ["On-premise Linux server", "Nginx"]
+    },
+    "techTags": ["Flask", "ChromaDB", "Local LLMs", "Python", "React"],
+    "liveUrl": null,
+    "heroImage": "/imed-os-3.png",
+    "gallery": [
+      "/imed-os-2.png",
+      "/imed-os-1.png"
+    ],
+    "architectureDiagram": true
+  },
+  {
+    "slug": "genspeech-wordpress-plugin",
+    "title": "GenSpeech AI Audio Player",
+    "category": "Plugins & Audio",
+    "featured": false,
+    "featuredOrder": null,
+    "tagline": "A zero-latency, highly accessible Text-to-Speech (TTS) integration for NextGenLearner.in.",
+    "problem": "NextGenLearner.in wanted to boost accessibility and increase average time-on-page by offering audio versions of their deep-dive tech articles. Existing third-party TTS plugins were heavily bloated, introduced severe layout shifts, and locked premium voices behind expensive paywalls.",
+    "approach": "We engineered a custom, lightweight WordPress plugin from the ground up. It hooks natively into the content render pipeline, automatically converting text to pristine audio via advanced TTS APIs. The player UI is built with zero-dependency vanilla JS for instant load times, featuring granular speed controls, voice selection, and dynamic caching via WordPress Transients.",
+    "result": "The custom audio player achieved a perfect 100 Lighthouse performance score with zero layout shift. Average engagement time on articles with the GenSpeech player jumped significantly, offering a premium listening experience seamlessly embedded into the dark-mode reading UI.",
+    "timeline": "4 weeks",
+    "role": "Plugin architecture, Audio API integration, Custom UI/UX",
+    "stack": {
+      "frontend": ["Vanilla JS", "CSS3", "DOM API"],
+      "backend": ["PHP 8", "WordPress Hooks API"],
+      "data": ["Web Speech API", "Audio Caching"],
+      "infra": ["NextGenLearner Infrastructure"]
+    },
+    "techTags": ["WordPress", "PHP", "JavaScript", "TTS API", "Audio Processing"],
+    "liveUrl": null,
+    "heroImage": "/media_1790535394948.png",
+    "gallery": [
+      "/media_1790535394948.png"
+    ],
+    "architectureDiagram": true
+  },
+  {
+    "slug": "suva-botanica",
+    "title": "Suva Botanica",
+    "category": "E-Commerce & Branding",
+    "featured": true,
+    "featuredOrder": 2,
+    "tagline": "Curated greenery for curated spaces.",
+    "problem": "Suva Botanica, a premium plant nursery, required a digital storefront that reflected their high-end, organic aesthetic. Standard e-commerce templates felt cheap and rigid, failing to capture the elegance of their lab-grown, gift-ready plant collections.",
+    "approach": "We designed a bespoke, earth-toned digital experience. By replacing traditional cart flows with an integrated WhatsApp ordering pipeline, we optimized for high-ticket bulk gifting and personalized customer service. The UI relies heavily on deep greens, elegant typography, and expansive imagery to create a calming, botanical atmosphere.",
+    "result": "The new platform elevated the brand's perceived value immensely. Online inquiries skyrocketed by 300%, and the seamless 'WhatsApp Us' integration completely streamlined their B2B corporate gifting and event styling funnels.",
+    "timeline": "6 weeks",
+    "role": "Brand Identity, UI/UX Design, Frontend Development",
+    "stack": {
+      "frontend": ["Next.js", "Tailwind CSS", "Framer Motion"],
+      "backend": ["Serverless Architecture"],
+      "data": ["Static Generation"],
+      "infra": ["Vercel Edge Network"]
+    },
+    "techTags": ["Next.js", "Tailwind CSS", "WhatsApp API", "E-Commerce"],
+    "liveUrl": "https://suva-botanica.vercel.app",
+    "heroImage": "/media_1790535604036.png",
+    "gallery": [
+      "/media_1790535603902.png",
+      "/media_1790535603755.png",
+      "/media_1790535603732.png"
+    ],
+    "architectureDiagram": false
+  },
+  {
+    "slug": "storyline-design-events",
+    "title": "Storyline Design & Events",
+    "category": "Websites",
+    "featured": true,
+    "featuredOrder": 3,
+    "tagline": "Portfolio site that books 3 events/month organically",
+    "problem": "Storyline relied entirely on word-of-mouth and Instagram for client acquisition. They had no web presence, which meant zero discoverability via search and no way to showcase their full portfolio to prospective corporate clients.",
+    "approach": "We designed a portfolio-driven website with a gallery organized by event type, an enquiry form, and strong local SEO targeting Pune-based event planning searches. The design mirrors the premium aesthetic of their event work — editorial layouts, full-bleed imagery, minimal text.",
+    "result": "The site now generates an average of 3 qualified event enquiries per month from organic search, with zero ad spend.",
+    "timeline": "4 weeks",
+    "role": "UI/UX design + full-stack development + SEO",
+    "stack": {
+      "frontend": ["Next.js", "Framer Motion"],
+      "backend": ["Next.js API Routes"],
+      "data": ["Supabase"],
+      "infra": ["Vercel"]
+    },
+    "techTags": ["Next.js", "Supabase", "Framer Motion", "Vercel"],
+    "liveUrl": "https://storylinedesign.in",
+    "heroImage": "/media_1790536484185.png",
+    "gallery": [
+      "/media_1790536484092.png",
+      "/media_1790536483466.png",
+      "/media_1790536483659.png"
+    ],
+    "architectureDiagram": false
+  },
+  {
+    "slug": "storyline-erp-system",
+    "title": "Storyline ERP System",
+    "category": "Websites",
+    "featured": false,
+    "featuredOrder": null,
+    "tagline": "End-to-end event operations management for a 20-person team",
+    "problem": "Storyline's growing team was managing events across spreadsheets, WhatsApp groups, and personal notes. Task assignments were verbal, vendor payments were tracked in notebooks, and client CRM data lived in the founder's phone contacts. At 15+ concurrent events, this broke down regularly.",
+    "approach": "We built a custom ERP system covering the full event lifecycle: client CRM with deal pipeline, task boards for team assignment and tracking, vendor database with contract and payment status, event timelines with milestone alerts, and a reporting dashboard for the founder. Role-based access ensures team members see only what's relevant to their function.",
+    "result": "Team coordination overhead dropped significantly. Vendor payment disputes reduced to near-zero with a clear audit trail. The founder now tracks all active events from a single dashboard instead of 12 WhatsApp groups.",
+    "timeline": "10 weeks",
+    "role": "Full-stack development + system architecture",
+    "stack": {
+      "frontend": ["Next.js", "React", "CSS Modules"],
+      "backend": ["Next.js API Routes", "Node.js"],
+      "data": ["Supabase", "PostgreSQL"],
+      "infra": ["Vercel"]
+    },
+    "techTags": ["Next.js", "Supabase", "PostgreSQL", "React"],
+    "liveUrl": null,
+    "heroImage": "/media_1790537206588.png",
+    "gallery": [
+      "/media_1790537206648.png",
+      "/media_1790537206620.png"
+    ],
+    "architectureDiagram": true
+  },
+  {
+    "slug": "nextgenlearner",
+    "title": "NextGenLearner",
+    "category": "Websites",
+    "featured": false,
+    "featuredOrder": null,
+    "tagline": "Zero-downtime server migration with 99.9% uptime since",
+    "problem": "NextGenLearner's educational platform was hosted on an unmanaged VPS that went down 2–3 times per month. The site was slow, had no SSL, no CDN, and the ad revenue setup was misconfigured — leaving money on the table.",
+    "approach": "We migrated the entire platform to a properly configured server stack with automated backups, SSL, CDN integration, and monitoring. We fixed the SEO infrastructure (sitemaps, structured data, Core Web Vitals) and reconfigured the ad monetization setup for optimal placement without degrading user experience.",
+    "result": "99.9% uptime since migration. Page load time improved dramatically. Ad revenue increased through proper placement optimization and the SEO fixes drove measurable organic traffic growth.",
+    "timeline": "3 weeks",
+    "role": "Server migration + infrastructure + SEO",
+    "stack": {
+      "frontend": ["WordPress"],
+      "backend": ["PHP", "MySQL"],
+      "data": ["MySQL"],
+      "infra": ["VPS", "Nginx", "Cloudflare CDN", "Let's Encrypt SSL"]
+    },
+    "techTags": ["WordPress", "Nginx", "Cloudflare", "MySQL"],
+    "liveUrl": "https://nextgenlearner.in",
+    "heroImage": "/media_1790537503919.png",
+    "gallery": [
+      "/media_1790537503843.png",
+      "/media_1790537503779.png"
+    ],
+    "architectureDiagram": false
+  }
+]

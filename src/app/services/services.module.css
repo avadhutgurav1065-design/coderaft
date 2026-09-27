@@ -1,0 +1,225 @@
+/* ============================================================
+   Services Page Premium Styles
+   ============================================================ */
+
+.services {
+  padding: 80px 0 var(--section-gap);
+}
+
+.servicesInner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.servicesHeader {
+  margin-bottom: 64px;
+}
+
+.servicesTitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-h2);
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.servicesSubhead {
+  font-size: var(--text-body-lg);
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+/* --- Layout --- */
+.servicesLayout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* --- Sidebar Navigation --- */
+.sidebarNav {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navItem {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.navItem:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.navItem.active {
+  color: var(--accent-blue);
+  border-left-color: var(--accent-blue);
+  background: var(--accent-glow);
+}
+
+/* --- Content Area --- */
+.contentArea {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.serviceBlock {
+  padding-top: 80px;
+  margin-top: -80px; /* Offset for scroll to anchor with sticky header */
+}
+
+.serviceTitle {
+  font-size: var(--text-h2);
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.serviceDesc {
+  font-size: var(--text-body-lg);
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+/* Features Grid */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.featureName {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.featureDesc {
+  font-size: var(--text-small);
+  color: var(--text-tertiary);
+}
+
+/* "Good fit if" Box */
+.fitBox {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 48px;
+}
+
+.fitTitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.fitList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fitList li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: var(--text-body);
+  color: var(--text-secondary);
+}
+
+.check {
+  color: var(--success);
+  font-weight: bold;
+}
+
+/* Example Project Link */
+.exampleProject {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.exampleProject:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--border-strong);
+}
+
+.exampleLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.exampleTitle {
+  font-size: var(--text-small);
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .servicesLayout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .sidebarNav {
+    position: static;
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .navItem {
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+
+  .navItem.active {
+    border-left-color: transparent;
+    border-bottom-color: var(--accent-blue);
+  }
+}
+
+@media (max-width: 640px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}

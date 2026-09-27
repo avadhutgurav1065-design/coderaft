@@ -1,0 +1,182 @@
+/* ============================================================
+   Process Page Premium Styles
+   ============================================================ */
+
+.processPage {
+  padding: 80px 0 var(--section-gap);
+}
+
+.processInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.processHeader {
+  margin-bottom: 80px;
+}
+
+.processTitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-h2);
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.processIntro {
+  font-size: var(--text-body-lg);
+  color: var(--text-secondary);
+  max-width: 700px;
+}
+
+/* Steps Section */
+.stepsSection {
+  margin-bottom: 96px;
+}
+
+.stepsSectionTitle {
+  font-size: var(--text-h3);
+  color: var(--text-primary);
+  margin-bottom: 48px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  font-family: var(--font-mono);
+  font-size: var(--text-base);
+  color: var(--text-tertiary);
+  margin-bottom: 24px;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepTitle {
+  font-size: var(--text-h3);
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.stepDesc {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Why Us Section */
+.whyUs {
+  margin-bottom: 96px;
+}
+
+.whyUsTitle {
+  font-size: var(--text-h3);
+  color: var(--text-primary);
+  margin-bottom: 48px;
+}
+
+.whyUsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .whyUsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .whyUsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.whyUsItemTitle {
+  font-size: var(--text-h4);
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.whyUsItemDesc {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* GitHub Strip */
+.github {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 96px;
+}
+
+.githubTitle {
+  font-size: var(--text-h3);
+  color: var(--text-primary);
+  margin-bottom: 48px;
+}
+
+.githubGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .githubGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .githubGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.repoName {
+  font-size: var(--text-h4);
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.repoDesc {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.repoLang {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--text-tertiary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.langDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+}

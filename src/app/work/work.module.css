@@ -1,0 +1,163 @@
+/* ============================================================
+   Work / Portfolio Page Premium Styles
+   ============================================================ */
+
+.work {
+  padding: 80px 0 var(--section-gap);
+}
+
+.workInner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.workHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.workTitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-h2);
+  color: var(--text-primary);
+}
+
+/* --- Filter Bar --- */
+.filterBar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px; /* For scrollbar */
+}
+
+/* Hide scrollbar */
+.filterBar::-webkit-scrollbar {
+  display: none;
+}
+.filterBar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.filterTab {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.filterTab:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.filterTab.active {
+  background: var(--accent-glow);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+/* --- Project Grid --- */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.interactiveCard {
+  transition: transform var(--transition-smooth);
+}
+
+.interactiveCard:hover {
+  transform: translateY(-8px);
+}
+
+.cardImage {
+  aspect-ratio: 16 / 9;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: border-color var(--transition-fast);
+}
+
+.interactiveCard:hover .cardImage {
+  border-color: var(--accent-blue);
+  box-shadow: 0 20px 40px -20px var(--accent-glow);
+}
+
+/* Fallback until real images are added */
+.cardImagePlaceholder {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cardTitle {
+  font-size: var(--text-h4);
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  transition: color var(--transition-fast);
+}
+
+.interactiveCard:hover .cardTitle {
+  color: var(--accent-blue);
+}
+
+.cardTagline {
+  font-size: var(--text-body);
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.cardCategory {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-blue);
+  background: var(--accent-glow);
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+.cardTech {
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
+
+.noResults {
+  grid-column: 1 / -1;
+  font-family: var(--font-mono);
+  font-size: var(--text-body);
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 64px 0;
+}
+
+@media (max-width: 768px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}
