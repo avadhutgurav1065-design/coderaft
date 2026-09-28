@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import SpotlightCard from '@/components/ui/SpotlightCard';
 import TerminalAnimation from '@/components/TerminalAnimation';
-import { 
-  GitMerge, Terminal, Cpu, ShieldCheck, Rocket, 
-  Code2, Database, Globe, Settings, Workflow, 
+import {
+  GitMerge, Terminal, Cpu, ShieldCheck, Rocket,
+  Code2, Database, Globe, Settings, Workflow,
   CheckCircle2, Lock, Zap
 } from 'lucide-react';
 
@@ -93,10 +93,10 @@ export default function ProcessClient() {
 
   return (
     <div className="min-h-screen bg-[#020202] text-white pt-32 pb-32 overflow-hidden" ref={containerRef}>
-      
+
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-6 mb-32 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -147,12 +147,12 @@ export default function ProcessClient() {
         <div className="relative">
           {/* Vertical Line */}
           <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500/0 via-blue-500/50 to-blue-500/0 hidden md:block" />
-          
+
           <div className="space-y-32">
             {STEPS.map((step, index) => {
               const isEven = index % 2 === 0;
               return (
-                <motion.div 
+                <motion.div
                   key={step.number}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -168,10 +168,10 @@ export default function ProcessClient() {
                   {/* Content */}
                   <div className="w-full md:w-1/2 flex flex-col justify-center px-0 md:px-12">
                     <div className="md:hidden inline-flex items-center gap-4 mb-6">
-                       <span className="text-3xl font-mono text-blue-500 font-bold opacity-50">{step.number}</span>
-                       <div className="h-px bg-blue-500/30 flex-grow" />
+                      <span className="text-3xl font-mono text-blue-500 font-bold opacity-50">{step.number}</span>
+                      <div className="h-px bg-blue-500/30 flex-grow" />
                     </div>
-                    
+
                     <div className="flex items-center gap-4 mb-6">
                       {step.icon}
                       <h3 className="text-3xl lg:text-4xl font-bold">{step.title}</h3>
@@ -193,8 +193,8 @@ export default function ProcessClient() {
                   <div className="w-full md:w-1/2">
                     <SpotlightCard className="relative aspect-[4/3] rounded-2xl overflow-hidden group">
                       <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-transparent mix-blend-overlay z-10 group-hover:opacity-100 transition-opacity opacity-0" />
-                      <img 
-                        src={step.image} 
+                      <img
+                        src={step.image}
                         alt={step.title}
                         className="absolute inset-0 w-full h-full object-cover mix-blend-luminosity opacity-40 group-hover:scale-105 group-hover:mix-blend-normal transition-all duration-700"
                       />
@@ -216,7 +216,7 @@ export default function ProcessClient() {
             We operate differently than traditional agencies. This is what you can expect when you partner with us.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {PHILOSOPHIES.map((item, index) => (
             <motion.div

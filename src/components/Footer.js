@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
-        
+
         {/* Massive CTA Section */}
         <div className="w-full mb-16 pb-16 border-b border-[var(--border-subtle)] flex flex-col md:flex-row items-start md:items-end justify-between gap-8">
           <div className="w-full md:w-2/3">

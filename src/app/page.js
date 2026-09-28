@@ -72,83 +72,83 @@ export default function Home() {
   return (
     <>
       <JsonLd data={getLocalBusinessSchema()} />
-      
+
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.glowBlob} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[500px] bg-[var(--accent-blue)] opacity-[0.05] blur-[150px] rounded-full pointer-events-none" />
         <div className={styles.heroInner}>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className={styles.heroContent}
           >
-            <div className={styles.badge}>
-              <span className={styles.pulse} />
-              Accepting new projects
+            <div className="inline-flex items-center gap-2 px-3 py-1 mb-8 rounded bg-[rgba(0,240,255,0.05)] border border-[rgba(0,240,255,0.3)]">
+              <span className="w-2 h-2 rounded-full bg-[var(--accent-blue)] animate-pulse" />
+              <span className="font-mono text-xs text-[var(--accent-blue)] uppercase tracking-widest">SYSTEM.INIT // READY</span>
             </div>
-            
-            <h1 className={styles.heroTitle}>
-              <TextReveal text="We architect" className="justify-center" />
-              <motion.span 
+
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
+              <span className="block text-white">We architect</span>
+              <motion.span
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
-                className="text-gradient-accent block text-center mt-2"
+                className="neon-text block mt-2"
               >
                 software that ships.
               </motion.span>
             </h1>
-            
-            <p className={styles.heroDesc}>
-              Premium full-stack engineering for startups and enterprise. We transform complex problems into elegant, scalable digital experiences.
+
+            <p className="text-lg md:text-xl text-[var(--text-secondary)] font-mono max-w-2xl mx-auto mb-10 leading-relaxed">
+              &gt; Premium full-stack engineering for startups and enterprise. We transform complex problems into elegant, scalable digital experiences.
             </p>
-            
+
             <div className={styles.heroActions}>
               <Link href="/contact" className="btn-primary">
-                Start your project <ArrowRight size={18} />
+                START_PROJECT <ArrowRight size={18} />
               </Link>
               <Link href="/work" className="btn-secondary">
-                View our work
+                VIEW_ARCHIVES
               </Link>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             className={styles.heroVisual}
           >
             <div className="relative w-full aspect-square max-h-[600px]">
-              <motion.img 
-                src="/media_1790530480971.png"
-                alt="IMED OS Dashboard"
-                className="absolute top-0 right-0 w-3/4 h-3/4 object-cover rounded-2xl border border-[var(--border-strong)] shadow-2xl"
+              <motion.img
+                src="/neon_interface_1.jpg"
+                alt="Cybernetic UI Interface"
+                className="absolute top-0 right-0 w-3/4 h-3/4 object-cover rounded-2xl border border-[var(--border-strong)] shadow-[0_0_40px_rgba(0,240,255,0.15)]"
                 initial={{ y: 20 }}
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               />
-              <motion.img 
-                src="/media_1790535399411.png"
-                alt="GenSpeech Voice Platform"
-                className="absolute bottom-0 left-0 w-2/3 h-2/3 object-cover rounded-2xl border border-[var(--border-strong)] shadow-2xl"
+              <motion.img
+                src="/neon_interface_3.jpg"
+                alt="Glowing Data Architecture"
+                className="absolute bottom-0 left-0 w-2/3 h-2/3 object-cover rounded-2xl border border-[var(--border-strong)] shadow-[0_0_40px_rgba(255,0,255,0.15)]"
                 initial={{ y: -20 }}
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               />
               {/* Floating tech spec card */}
-              <motion.div 
-                className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 bg-[var(--bg-glass)] backdrop-blur-xl p-6 rounded-xl border border-[var(--border-subtle)]"
+              <motion.div
+                className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.8)] backdrop-blur-xl p-4 rounded-sm border border-[var(--accent-blue)] shadow-[0_0_20px_rgba(0,240,255,0.2)]"
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1, y: [0, -15, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", opacity: { duration: 1, delay: 0.5 } }}
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-                  <span className="font-mono text-sm text-[var(--text-secondary)]">SYSTEM_ONLINE</span>
+                  <div className="w-2 h-2 rounded-full bg-[var(--accent-blue)] animate-pulse" />
+                  <span className="font-mono text-[10px] text-[var(--accent-blue)]">PERFORMANCE_METRIC</span>
                 </div>
-                <div className="text-[var(--text-primary)] font-medium">Lighthouse Score: 100</div>
+                <div className="text-white font-mono text-sm tracking-wider">Lighthouse: 100/100</div>
               </motion.div>
             </div>
           </motion.div>
@@ -159,7 +159,7 @@ export default function Home() {
       <section className={styles.metrics}>
         <div className={styles.metricsInner}>
           {METRICS.map((metric, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -204,9 +204,9 @@ export default function Home() {
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[rgba(59,130,246,0.05)] to-transparent pointer-events-none" />
         <div className="max-w-[var(--content-max)] mx-auto px-[var(--gutter)] relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            
+
             {/* Case Study Content */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -219,12 +219,12 @@ export default function Home() {
                 <span className="text-[var(--text-tertiary)] font-mono text-sm">AI SYSTEM</span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-[var(--text-primary)] mb-6 leading-tight">
-                IMED AI Placement <br className="hidden md:block"/> Intelligence Pipeline
+                IMED AI Placement <br className="hidden md:block" /> Intelligence Pipeline
               </h2>
               <p className="text-[var(--text-secondary)] text-lg mb-8 leading-relaxed max-w-xl">
                 We engineered an end-to-end RAG (Retrieval-Augmented Generation) pipeline that automates student-to-job matching. By ingesting thousands of resumes and parsing unstructured job descriptions, the system dynamically ranks candidates with 94% accuracy, cutting manual review time by weeks.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-8 mb-10">
                 <div>
                   <div className="text-3xl font-bold text-white mb-2">300+</div>
@@ -243,7 +243,7 @@ export default function Home() {
             </motion.div>
 
             {/* Case Study Visual */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -252,15 +252,15 @@ export default function Home() {
             >
               {/* Main Image Layer */}
               <div className="absolute inset-0 rounded-2xl overflow-hidden border border-[var(--border-strong)] bg-black shadow-2xl group">
-                <img 
-                  src="/imed-os-1.png" 
-                  alt="IMED OS Platform Engine" 
+                <img
+                  src="/imed-os-1.png"
+                  alt="IMED OS Platform Engine"
                   className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-105 opacity-80"
                 />
               </div>
 
               {/* Layer 2: Dashboard Screenshot (Floating Bottom Right) */}
-              <motion.div 
+              <motion.div
                 className="absolute right-0 md:-right-12 bottom-24 md:-bottom-12 w-[85%] md:w-[70%] aspect-video rounded-xl md:rounded-2xl border border-[var(--border-strong)] shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden z-10"
                 initial={{ y: 30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -271,7 +271,7 @@ export default function Home() {
               </motion.div>
 
               {/* Layer 3: Test UI Screenshot (Floating Top Left) */}
-              <motion.div 
+              <motion.div
                 className="absolute -left-2 md:-left-10 top-6 md:top-16 w-[70%] md:w-[55%] aspect-video rounded-xl border border-[var(--border-strong)] shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden z-10"
                 initial={{ x: -30, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
@@ -280,7 +280,7 @@ export default function Home() {
               >
                 <img src="/imed-os-3.png" alt="IMED OS Question Map" className="w-full h-full object-cover object-left-top" />
               </motion.div>
-              
+
               {/* Floating Data UI */}
               <div className="absolute bottom-4 left-4 right-4 md:bottom-8 md:left-8 md:right-8 bg-[rgba(10,10,12,0.85)] backdrop-blur-xl border border-[var(--border-subtle)] p-4 md:p-6 rounded-xl z-20">
                 <div className="flex items-center justify-between mb-4">
@@ -322,11 +322,10 @@ export default function Home() {
                 <button
                   key={cap.id}
                   onClick={() => setActiveCap(cap)}
-                  className={`text-left p-6 rounded-xl border transition-all duration-300 ${
-                    activeCap.id === cap.id 
-                      ? 'bg-[var(--bg-glass)] border-[var(--border-strong)] shadow-lg shadow-[rgba(0,0,0,0.5)] scale-105' 
+                  className={`text-left p-6 rounded-xl border transition-all duration-300 ${activeCap.id === cap.id
+                      ? 'bg-[var(--bg-glass)] border-[var(--border-strong)] shadow-lg shadow-[rgba(0,0,0,0.5)] scale-105'
                       : 'bg-transparent border-[var(--border-subtle)] opacity-50 hover:opacity-100 hover:border-[var(--border-strong)]'
-                  }`}
+                    }`}
                 >
                   <h3 className={`text-2xl font-bold mb-2 ${activeCap.id === cap.id ? 'text-white' : 'text-[var(--text-secondary)]'}`}>
                     {cap.title}
@@ -344,7 +343,7 @@ export default function Home() {
 
             {/* Interactive Code Window */}
             <div className="lg:col-span-8">
-              <motion.div 
+              <motion.div
                 key={activeCap.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -353,7 +352,7 @@ export default function Home() {
               >
                 {/* Glow Effect */}
                 <div className={`absolute -top-[50%] -left-[50%] w-[200%] h-[200%] bg-gradient-to-br ${activeCap.color} opacity-5 blur-[120px] pointer-events-none`} />
-                
+
                 {/* Window Header */}
                 <div className="flex items-center px-4 py-3 border-b border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)]">
                   <div className="flex gap-2">
@@ -365,14 +364,14 @@ export default function Home() {
                     {activeCap.id}.sys
                   </div>
                 </div>
-                
+
                 {/* Code Content */}
                 <div className="p-8 flex-1 overflow-x-auto">
                   <pre className="font-mono text-sm md:text-base text-[var(--text-secondary)] leading-relaxed">
                     <code dangerouslySetInnerHTML={{ __html: activeCap.code.replace(/export|function|return|async|const|await|if|throw|def/g, match => `<span class="text-pink-400">${match}</span>`).replace(/ReactServerComponents|Suspense|DynamicEdgeRender|Response|Unauthorized/g, match => `<span class="text-blue-400">${match}</span>`).replace(/import|from/g, match => `<span class="text-purple-400">${match}</span>`) }} />
                   </pre>
                 </div>
-                
+
                 {/* Status Footer */}
                 <div className="px-6 py-3 border-t border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] flex justify-between items-center">
                   <span className="flex items-center gap-2 text-xs font-mono text-green-400">
@@ -396,10 +395,10 @@ export default function Home() {
             <h2 className={styles.sectionTitle}>Engineering Excellence</h2>
             <p className={styles.sectionDesc}>End-to-end capabilities tailored for modern demands.</p>
           </div>
-          
+
           <div className={styles.bentoGrid}>
             {SERVICES.map((service, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -410,18 +409,18 @@ export default function Home() {
                 <SpotlightCard className="h-full relative overflow-hidden group">
                   {/* Hover Image Reveal */}
                   <motion.div className="absolute inset-0 z-0 opacity-[0.05] sm:opacity-0 sm:group-hover:opacity-20 transition-opacity duration-700">
-                    <img 
+                    <img
                       src={
-                        i === 0 ? 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80' : 
-                        i === 1 ? 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80' : 
-                        i === 2 ? 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80' : 
-                        'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80'
-                      } 
+                        i === 0 ? 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80' :
+                          i === 1 ? 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80' :
+                            i === 2 ? 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80' :
+                              'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80'
+                      }
                       alt=""
                       className="w-full h-full object-cover grayscale transition-transform duration-1000 group-hover:scale-110"
                     />
                   </motion.div>
-                  
+
                   <div className={`relative z-10 ${styles.bentoContent}`}>
                     <div className={`${styles.iconBox} transition-transform duration-300 group-hover:-translate-y-2 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]`}>
                       <service.icon size={24} className={styles.serviceIcon} />
@@ -444,7 +443,7 @@ export default function Home() {
       {/* Extreme Engagement Models Section */}
       <section className="py-24 md:py-32 bg-[#050505] relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[500px] bg-[var(--accent-blue)] opacity-[0.03] blur-[150px] rounded-full pointer-events-none" />
-        
+
         <div className="max-w-[var(--content-max)] mx-auto px-[var(--gutter)] relative z-10">
           <div className="text-center mb-16 md:mb-24">
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">How We Engage</h2>
@@ -455,7 +454,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Model 1 */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -479,7 +478,7 @@ export default function Home() {
             </motion.div>
 
             {/* Model 2 */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -507,7 +506,7 @@ export default function Home() {
             </motion.div>
 
             {/* Model 3 */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
@@ -581,7 +580,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className={styles.cta}>
         <div className={styles.ctaInner}>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}

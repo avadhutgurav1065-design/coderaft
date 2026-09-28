@@ -86,13 +86,6 @@ export default function Header() {
             {link.label}
           </Link>
         ))}
-        <Link
-          href="/contact"
-          className={`btn-primary ${styles.mobileCta}`}
-          onClick={() => setMobileOpen(false)}
-        >
-          Start a project
-        </Link>
       </div>
     </header>
   );
