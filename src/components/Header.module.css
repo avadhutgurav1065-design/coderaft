@@ -152,11 +152,11 @@
 }
 
 @media (max-width: 768px) {
-  .nav {
-    display: none;
+  .headerInner {
+    height: 60px;
   }
 
-  .headerCta {
+  .nav {
     display: none;
   }
 
