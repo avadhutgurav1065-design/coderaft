@@ -26,7 +26,9 @@ export default function Footer() {
         <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand column */}
           <div className={`${styles.brand} col-span-2 lg:col-span-2 mb-4 md:mb-0`}>
-            <Link href="/" className={styles.logo}>coderaft</Link>
+            <Link href="/" className={styles.logo}>
+              <img src="/coderaft_logo_white.jpg" alt="Coderaft" className="h-10 md:h-14 lg:h-16 w-auto object-contain mix-blend-screen mb-4" />
+            </Link>
             <p className={styles.tagline}>
               Software that ships. Full-stack web platforms, custom AI systems,
               and infrastructure — built and maintained end to end.

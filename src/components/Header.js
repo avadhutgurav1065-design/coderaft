@@ -38,7 +38,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.headerInner}>
         <Link href="/" className={styles.logo}>
-          coderaft
+          <img src="/coderaft_logo_white.jpg" alt="Coderaft" className="h-8 md:h-12 w-auto object-contain mix-blend-screen" />
         </Link>
 
         <nav className={styles.nav}>
@@ -56,9 +56,11 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link href="/contact" className={`btn-primary hidden md:inline-flex ${styles.headerCta}`}>
-          Start a project
-        </Link>
+        <div className="hidden md:block">
+          <Link href="/contact" className={`btn-primary !px-5 !py-2.5 !text-sm ${styles.headerCta}`}>
+            Start a project
+          </Link>
+        </div>
 
         <button
           className={`${styles.hamburger} ${mobileOpen ? styles.open : ''}`}
