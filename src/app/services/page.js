@@ -156,9 +156,9 @@ export default function Services() {
                   {/* Metrics Row */}
                   <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
                     {service.metrics.map(m => (
-                      <div key={m.label} className="p-6 rounded-2xl bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.05)] flex flex-col justify-center">
-                        <div className="text-3xl font-bold text-white mb-2">{m.value}</div>
-                        <div className="text-xs font-mono uppercase text-[var(--text-tertiary)]">{m.label}</div>
+                      <div key={m.label} className="p-4 sm:p-6 rounded-2xl bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.05)] flex flex-col justify-center break-words">
+                        <div className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2 leading-tight">{m.value}</div>
+                        <div className="text-[10px] sm:text-xs font-mono uppercase text-[var(--text-tertiary)] leading-tight">{m.label}</div>
                       </div>
                     ))}
                   </div>
