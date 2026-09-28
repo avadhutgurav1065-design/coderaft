@@ -16,7 +16,7 @@ export function getLocalBusinessSchema() {
       'Full-stack web platforms, custom AI systems, and infrastructure — built and maintained end to end.',
     url: 'https://coderaft.dev',
     telephone: '+919518780272',
-    email: 'hello@coderaft.dev',
+    email: 'coderaft4@gmail.com',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Pune',

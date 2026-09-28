@@ -46,11 +46,10 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`${styles.navLink} ${
-                pathname === link.href || pathname.startsWith(link.href + '/')
+              className={`${styles.navLink} ${pathname === link.href || pathname.startsWith(link.href + '/')
                   ? styles.active
                   : ''
-              }`}
+                }`}
             >
               {link.label}
             </Link>
@@ -86,6 +85,13 @@ export default function Header() {
             {link.label}
           </Link>
         ))}
+        <Link
+          href="/contact"
+          className={`btn-primary ${styles.mobileCta}`}
+          onClick={() => setMobileOpen(false)}
+        >
+          Start a project
+        </Link>
       </div>
     </header>
   );

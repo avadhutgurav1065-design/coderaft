@@ -122,17 +122,17 @@ export default function Home() {
           >
             <div className="relative w-full aspect-square max-h-[600px]">
               <motion.img
-                src="/neon_interface_1.jpg"
-                alt="Cybernetic UI Interface"
-                className="absolute top-0 right-0 w-3/4 h-3/4 object-cover rounded-2xl border border-[var(--border-strong)] shadow-[0_0_40px_rgba(0,240,255,0.15)]"
+                src="/media_1790530480971.png"
+                alt="IMED OS Dashboard"
+                className="absolute top-0 right-0 w-3/4 h-3/4 object-cover rounded-sm border border-[var(--border-strong)] shadow-[0_0_30px_rgba(0,240,255,0.15)] grayscale hover:grayscale-0 transition-all duration-700"
                 initial={{ y: 20 }}
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               />
               <motion.img
-                src="/neon_interface_3.jpg"
-                alt="Glowing Data Architecture"
-                className="absolute bottom-0 left-0 w-2/3 h-2/3 object-cover rounded-2xl border border-[var(--border-strong)] shadow-[0_0_40px_rgba(255,0,255,0.15)]"
+                src="/media_1790535399411.png"
+                alt="GenSpeech Voice Platform"
+                className="absolute bottom-0 left-0 w-2/3 h-2/3 object-cover rounded-sm border border-[var(--border-strong)] shadow-[0_0_30px_rgba(0,240,255,0.15)] grayscale hover:grayscale-0 transition-all duration-700"
                 initial={{ y: -20 }}
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
@@ -323,8 +323,8 @@ export default function Home() {
                   key={cap.id}
                   onClick={() => setActiveCap(cap)}
                   className={`text-left p-6 rounded-xl border transition-all duration-300 ${activeCap.id === cap.id
-                      ? 'bg-[var(--bg-glass)] border-[var(--border-strong)] shadow-lg shadow-[rgba(0,0,0,0.5)] scale-105'
-                      : 'bg-transparent border-[var(--border-subtle)] opacity-50 hover:opacity-100 hover:border-[var(--border-strong)]'
+                    ? 'bg-[var(--bg-glass)] border-[var(--border-strong)] shadow-lg shadow-[rgba(0,0,0,0.5)] scale-105'
+                    : 'bg-transparent border-[var(--border-subtle)] opacity-50 hover:opacity-100 hover:border-[var(--border-strong)]'
                     }`}
                 >
                   <h3 className={`text-2xl font-bold mb-2 ${activeCap.id === cap.id ? 'text-white' : 'text-[var(--text-secondary)]'}`}>
