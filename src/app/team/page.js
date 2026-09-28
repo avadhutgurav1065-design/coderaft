@@ -10,7 +10,7 @@ const TEAM = [
     name: 'Avadhut Gurav',
     role: 'Founder & Frontend Engineer',
     phone: '9518780272',
-    email: 'coderaft4@gmail.com',
+    email: 'avadhutgurav1065@gmail.com',
     image: '/Avadhut Gurav.png',
     bio: 'Obsessed with pixel-perfect design and uncompromised performance. Avadhut leads the visual and interactive architecture at Coderaft, crafting digital experiences that feel alive. From micro-interactions to complex state management, he bridges the gap between stunning UI and robust frontend engineering.',
     skills: [
@@ -27,7 +27,7 @@ const TEAM = [
     name: 'Jayesh Mahajan',
     role: 'Founder & Backend Architect',
     phone: '9022554823',
-    email: 'coderaft4@gmail.com',
+    email: 'jayeshmahajan340@gmail.com',
     image: '/Jayesh mahajan.png',
     bio: 'The engine running under the hood. Jayesh engineers scalable, fault-tolerant infrastructure and complex backend architectures. With a focus on security, data integrity, and high-availability APIs, he ensures that the systems Coderaft builds can handle extreme loads without breaking a sweat.',
     skills: [

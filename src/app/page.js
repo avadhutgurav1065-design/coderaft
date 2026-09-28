@@ -122,17 +122,17 @@ export default function Home() {
           >
             <div className="relative w-full aspect-square max-h-[600px]">
               <motion.img
-                src="/media_1790530480971.png"
+                src="/hero_neon_1.jpg"
                 alt="IMED OS Dashboard"
-                className="absolute top-0 right-0 w-3/4 h-3/4 object-cover rounded-sm border border-[var(--border-strong)] shadow-[0_0_30px_rgba(0,240,255,0.15)] grayscale hover:grayscale-0 transition-all duration-700"
+                className="absolute top-0 right-0 w-3/4 h-3/4 object-cover rounded-sm border border-[var(--border-strong)] shadow-[0_0_30px_rgba(0,240,255,0.15)] transition-all duration-700"
                 initial={{ y: 20 }}
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
               />
               <motion.img
-                src="/media_1790535399411.png"
+                src="/hero_neon_2.jpg"
                 alt="GenSpeech Voice Platform"
-                className="absolute bottom-0 left-0 w-2/3 h-2/3 object-cover rounded-sm border border-[var(--border-strong)] shadow-[0_0_30px_rgba(0,240,255,0.15)] grayscale hover:grayscale-0 transition-all duration-700"
+                className="absolute bottom-0 left-0 w-2/3 h-2/3 object-cover rounded-sm border border-[var(--border-strong)] shadow-[0_0_30px_rgba(0,240,255,0.15)] transition-all duration-700"
                 initial={{ y: -20 }}
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}

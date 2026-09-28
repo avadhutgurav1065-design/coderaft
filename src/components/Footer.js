@@ -46,7 +46,7 @@ export default function Footer() {
           {/* Contact column */}
           <div className={`${styles.footerCol} col-span-1`}>
             <span className={styles.colTitle}>Get in touch</span>
-            <a href="mailto:coderaft4@gmail.com" className={styles.footerLink}>
+            <a href="mailto:support.coderaft@gmail.com" className={styles.footerLink}>
               Email Us
             </a>
             <a href="https://github.com/coderaft" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>
